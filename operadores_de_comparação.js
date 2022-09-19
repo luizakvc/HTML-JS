@@ -17,14 +17,14 @@ let b = '78'
 console.log(a == b) // true
 
 //Identicos ==
-console.log(a === b) // false  // testa o valor e o tipo de variável
+console.log(a === b) // false  // testa o valor e o TIPO de variável
 
 //Diferença !=
 console.log(msg != msg2)  //true
 console.log(a != b) // false
 console.log(a !== b) // true   // diferente no valor E/OU tipo
 
-// Maior > ; maior ou igual >= ; compara os valores apenas
+// Maior > ; maior ou igual >= ; compara os valores apenas ; Menor < ; menor ou igual <=
 a = 56
 b = 30
 let c = 500
@@ -32,3 +32,7 @@ let d = 500
 
 console.log(a > b) // true
 console.log(c >= d) //true
+console.log(6 > 9) //false
+
+console.log( b < a) // true
+console.log(8 <= 5) // false
