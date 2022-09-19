@@ -17,3 +17,4 @@ console.log(++num) // 7 - operador de pré-incremento
 console.log(num--) // 7
 console.log(num) // 6
 console.log(--num) // 5
+
