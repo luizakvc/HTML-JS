@@ -14,7 +14,12 @@
  * -Cartão
  */
 
-const precoProduto = parseFloat(prompt('Qual o preço do produto? (use . acrescentar os centavos)')) // Para aceitar decimais
+const precoProduto = parseFloat(prompt('Qual o preço do produto? (use . para acrescentar os centavos)')) // Para aceitar decimais
+while(isNaN(precoProduto) || precoProduto <=0){
+    alert(`O preço digitado é ivalido. Use apenas números.`)
+    precoProduto = parseFloat(prompt('Qual o preço do produto? (use . para acrescentar os centavos'))
+}
+
 const msg = `
 Informe o méodo de pagamento:
 Digite 1 para pagamento em dinheiro
@@ -22,7 +27,10 @@ Digite 2 para pagamento em cheque
 Digite 3 para pagamento em cartão
 `
 
-const pagamento = prompt(msg)
+let pagamento = parseInt(prompt(msg)) // parseInt remove as casas decimais
+while (isNan(pagamento) || pagamento < 1 || pagamento > 3) {
+
+}
 
 console.log(precoProduto)
 console.log(pagamento)

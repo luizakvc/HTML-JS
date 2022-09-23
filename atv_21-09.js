@@ -26,7 +26,7 @@ const descontoG2 = 2.7 * 0.05
 
 if (combustivel == 'A') {
     if (litros <= 25) {
-        const precoFinal = (1.9 * litros) - ( litros * descontoA1)
+        const precoFinal = (1.86 * litros) 
         console.log(precoFinal)
         alert(`O preço a ser pago será ${precoFinal.toFixed(2)} reais` )
     } else if (litros > 25){
