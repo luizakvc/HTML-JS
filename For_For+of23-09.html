@@ -17,9 +17,9 @@
         const precoProduto = []
 
         for (let i = 0; i < qtdProdutos; i++) {
-            let preco = parseFloat(prompt('Informe o valor do produto ' + ( i + 1)))
-            precoProduto[i] = preco
-            console.log(precoProduto)
+            let preco = parseFloat(prompt('Informe o valor dos produtos ' + ( i + 1)))
+            //precoProduto[i] = preco // o i indica a posição dentro do array
+            precoProduto.push(preco) // mesma coisa que a linha de cima só que de uma forma mais simples, sem precisar saber o i
         }
 
         let soma = 0

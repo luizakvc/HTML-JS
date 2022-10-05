@@ -28,8 +28,9 @@ Digite 3 para pagamento em cartão
 `
 
 let pagamento = parseInt(prompt(msg)) // parseInt remove as casas decimais
-while (isNan(pagamento) || pagamento < 1 || pagamento > 3) {
-
+while (isNan(pagamento) || pagamento < 1 || pagamento > 3) { // insNaN(pagamento) = pagamento == NaN
+    alert(`Digite uma opção válida`)
+    pagamento = parseInt(prompt(msg))
 }
 
 console.log(precoProduto)

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 23/09</title>
+</head>
+<body>
+    <script>
+        /** Faça um programa que leia um vetor de seis elementos numéricos inteiros, calcule e mostre:
+         * A quantidade de números pares
+         * Quais os números pares
+         * A quantidade de números ímpares
+         * Quais os números ímpares
+         */
+    const numeros = []             // criei o array
+    
+        for (let i = 1; i <= 6 ; i++){          // criei um loop que execute 6x
+            const n = parseInt(prompt(`Digite o ${i}° valor`))  // Como i já começa valendo 1 não precisa der i + 1
+            numeros.push(n) // colocando os valores digitados dentro do array
+            
+        } 
+        alert(`Números digitados : ${numeros}`)
+
+        // Separando os pares dos ímpares
+        const pares = []
+        const impares = []
+        
+        // Percorrendo o array + criando variável para guardar os valores em cada posição
+        for (let num of numeros)  {  // (let i = 1; i <= 6; i++) // irá percorrer o array numeros
+            if (num % 2 == 0) { // Se o resto for igual a 0
+            pares.push(num)
+        } else {
+            impares.push(num)
+        }
+    }
+    
+    alert(`Os pares são: ${pares}`)
+    alert(`Os ímpares são: ${impares} `)
+    
+        
+
+
+         /** Faça um programa que leia um vetor com 10 números reais, calcule e mostre a quantidade de números negativos e a soma dos npumeros positivos desse vetor */
+
+         /** Faça um algoritmo para adicionar 20 valores em um array e depois imprima-os no HTML. Evite que o array possua valores duplicados. */
+
+    </script>
+</body>
+</html>

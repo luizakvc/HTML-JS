@@ -13,3 +13,17 @@ console.log(arr[6]) // outro texto
 console.log(arr[8]) // undefined
 arr[8] = 'Agora a posição 8 existe'
 console.log(arr[8])
+
+
+const lista = ['João', 'Maria', 'Paulo', 'Pedro', 'Vitória', 'Augusto', 'Fábio', 'Larissa']
+console.log(lista)
+lista.push('Roberta')  // Adicionar no final
+console.log(lista)
+lista.unshift('Gustavo') // Adiciona no inicio
+console.log(lista)
+lista.pop() // Remove o ultimo valor do array
+console.log(lista)
+lista.shift() // Remove o primeiro valor do array
+console.log(lista)
+console.log(lista.concat('Júlio')) // mesmo que o push só que gerando uma outra lista,a lista original não é mudada
+console.log(lista.join(' + ')) // vai unir os valores do array em uma string
